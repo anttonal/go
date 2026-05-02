@@ -13,7 +13,6 @@ func (u User) SendMessage(message string, messageLength int) (string, bool) {
 		return "", false
 	}
 	return message, true
-
 }
 
 // don't touch below this line
