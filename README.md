@@ -1,7 +1,14 @@
 # Learning Go
 
-Working through exercises from [boot.dev](https://boot.dev) by hand. Just practice to build muscle memory with the language.
+Working through exercises from [boot.dev](https://boot.dev) by hand. Practice to build muscle memory with the language. 
+Also creating own stuff in non-chapter folders.
 
-## What's here
+## Scaffold tool
+Created a small scaffold tool in `cmd/scaffold`.
 
-Handwritten solutions to Go exercises and challenges from the boot.dev curriculum.
+It's just there to create the skeleton for a chapter, and skip the lessons that don't have anything to submit.
+
+Run it with:
+```bash
+go run ./cmd/scaffold
+```
