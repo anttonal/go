@@ -1,6 +1,6 @@
 # Learning Go
 
-Working through exercises from [boot.dev](https://boot.dev) by hand. Practice to build muscle memory with the language. 
+Working through exercises from [boot.dev](https://boot.dev) by hand.
 Also creating own stuff in non-chapter folders.
 
 ## Scaffold tool
