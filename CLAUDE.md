@@ -23,8 +23,10 @@ answer straight.
 - `chN/lNN/` = one lesson: self-contained `main.go` (+ `main_test.go`).
   Exercise text and given identifiers are verbatim -- never rename or refactor.
 - `cmd/` = my own tools (scaffold, igcompare). Normal code, refactor freely.
-- Module `myproject`, go 1.26.4. `go.mod` is gitignored -- recreate with
-  `go mod init myproject` at repo root if it goes missing.
+- Module `myproject`, tracked in git. Toolchain comes from the flake devShell
+  (`go`, `gopls`, `golangci-lint`, `delve`), which direnv loads on cd -- `go`
+  is no longer installed globally. The shell sets `GOTOOLCHAIN=local` so the
+  `go` directive in go.mod cannot silently pull a different toolchain.
 - `go run ./chN/lNN`, `go test -v ./chN/lNN`. Per lesson only: some lessons are
   test-only with no `main`, and a few scaffolds are still empty, so
   `go build ./...` fails repo-wide by design.
